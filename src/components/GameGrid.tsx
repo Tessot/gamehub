@@ -1,11 +1,7 @@
 import { SimpleGrid, Text } from "@chakra-ui/react";
-import useGames from "../hooks/useGames";
+import useGames, { Game } from "../hooks/useGames";
 import GameCard from "./GameCard";
 
-interface Game {
-  id: number;
-  name: string;
-}
 interface FetchGamesResponse {
   count: number;
   results: Game[];
